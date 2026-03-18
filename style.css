@@ -1,0 +1,160 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#000;
+  color:#fff;
+  position:relative;
+  overflow-x:hidden;
+}
+
+/* 🔲 GRID + CUBE BACKGROUND */
+body::before{
+  content:"";
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+    url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-size:40px 40px, 40px 40px, auto;
+  opacity:0.05;
+  z-index:-2;
+}
+
+/* ✨ SOFT GOLD GLOW LIGHT */
+body::after{
+  content:"";
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,200,0,0.08), transparent 40%),
+    radial-gradient(circle at 80% 60%, rgba(255,200,0,0.06), transparent 40%);
+  z-index:-1;
+}
+
+/* HERO */
+.container{
+  text-align:center;
+  padding:60px 20px;
+}
+
+.badge{
+  background:#1a1a1a;
+  border:1px solid rgba(255,200,0,0.3);
+  color:#ffcc00;
+  padding:10px 18px;
+  border-radius:30px;
+  box-shadow:0 0 15px rgba(255,200,0,0.15);
+}
+
+/* TEXT */
+h1{
+  font-size:34px;
+  margin-top:20px;
+  font-weight:800;
+}
+
+h1 span{
+  color:#ffcc00;
+  text-shadow:0 0 10px rgba(255,200,0,0.4);
+}
+
+p{
+  color:#bbb;
+  margin:15px auto;
+  max-width:500px;
+  line-height:1.6;
+}
+
+/* 🔥 BUTTON */
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:15px 35px;
+  border-radius:40px;
+  background:linear-gradient(#ffcc00,#f5b400);
+  color:#000;
+  text-decoration:none;
+  font-weight:700;
+  box-shadow:0 0 15px rgba(255,200,0,0.3);
+  transition:0.3s;
+}
+
+.btn:hover{
+  box-shadow:0 0 30px rgba(255,200,0,0.7);
+  transform:translateY(-2px);
+}
+
+/* PINK BUTTON */
+.btn.pink{
+  background:linear-gradient(#ff4da6,#ff1a75);
+  color:#fff;
+  box-shadow:0 0 15px rgba(255,77,166,0.4);
+}
+
+.btn.pink:hover{
+  box-shadow:0 0 30px rgba(255,77,166,0.8);
+}
+
+/* SECTIONS */
+.section{
+  text-align:center;
+  padding:50px 20px;
+}
+
+.underline{
+  width:60px;
+  height:4px;
+  background:#ffcc00;
+  margin:10px auto 20px;
+  border-radius:10px;
+}
+
+/* 💎 CARDS */
+.card{
+  background:#0d0d0d;
+  padding:20px;
+  border-radius:15px;
+  margin:15px auto;
+  max-width:320px;
+  border:1px solid rgba(255,255,255,0.05);
+  box-shadow:0 0 20px rgba(255,200,0,0.05);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 40px rgba(255,200,0,0.15);
+}
+
+.card p{
+  line-height:1.7;
+}
+
+/* BIG NUMBERS */
+.big{
+  font-size:36px;
+  color:#ffcc00;
+  font-weight:800;
+}
+
+.sub{
+  color:#aaa;
+}
+
+/* FINAL SECTION */
+.ad{
+  background:#0a0a0a;
+}
+
+.ad-box{
+  border:1px solid #ff4da6;
+  box-shadow:0 0 20px rgba(255,77,166,0.15);
+}
